@@ -206,3 +206,48 @@
     bottom: 20px;
     right: 10px;
 }
+
+/** Call Banner Styling **/
+.section-m1{ /* adding default margin */
+    margin: 40px 0;
+}
+button.normal{/* custom button only those buttons will have this affect which has class normal in button tag*/
+    font-size: 14px;
+    font-weight: 600;
+    padding: 15px 30px;
+    color: black;
+    background-color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.2s;
+}
+#banner{ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    background-image: url("/Assets/banner/b2.jpg");
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+}
+#banner h4{
+    color: white;
+    font-size: 16px;
+}
+#banner h2{
+    color: white;
+    font-size: 30px;
+    padding: 10px 0;
+}
+#banner h2 span{
+    color: #ef3636;
+}
+#banner button:hover{ /* hover affect in button */
+    background-color: #088178;
+    color: white;
+}
