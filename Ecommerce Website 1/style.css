@@ -133,4 +133,76 @@
 #feature .fe-box:nth-child(6) h6{
     background-color: #fff2ef;
 }
+/** Feature Product Section **/
 
+#product{
+    text-align: center;
+}
+#product .pro-container{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    flex-wrap: wrap; /* do not want to align all the products in one line and with no space so used the flex-wrap:wrap */
+}
+#product .pro{
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid #cce7d0;
+    border-radius: 20px;
+    cursor: pointer; /*changing cursor to hand when hover on image box */
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+    margin: 15px 0;
+    transition: 0.2s ease;
+    position: relative;
+}
+
+#product .pro img{
+    width: 100%;
+    border-radius: 20px;
+}
+
+#product .pro:hover{
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+}
+
+#product .pro .des{
+    text-align: start;
+    padding: 10px 0;
+}
+
+#product .pro .des span{
+    color: #606063;
+    font-size: 11px;
+}
+
+#product .pro .des h5{
+    padding-top: 7px;
+    color: #1a1a1a;
+    font-size: 14px;
+}
+
+#product .pro .des i{
+    font-size: 12px;
+    color: rgb(243, 181,25);
+}
+
+#product .pro .des h4{
+    padding-top: 7px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #088178;
+}
+#product .pro .cart{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50px;
+    background-color: #e8f6ea;
+    font-weight: 500;
+    color: #088178;
+    border: 1px solid #cce7d0;
+    position: absolute; /* if we use position:absolute in child element then first we have to add position:relative to the parent element*/ 
+    bottom: 20px;
+    right: 10px;
+}
