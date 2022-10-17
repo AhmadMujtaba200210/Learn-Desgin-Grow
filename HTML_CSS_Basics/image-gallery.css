@@ -1,0 +1,58 @@
+body{
+     background-image: url("/Tasks/bavkground\ blend.jpg");
+     /* background-size: cover; */
+     height: 100vh;
+     /* display: flex; */
+     justify-content: center;
+     align-items: center;
+     font-family: Arial, Helvetica, sans-serif;
+
+}
+.gallery{
+    text-align: center;
+    color: white;
+    font-size: large;
+    font-stretch:extra-expanded;
+    text-shadow: 10px 10px 10px rgba(0,0,0,0.9);
+}
+
+
+.gallery .pro-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+.gallery .card{
+    width: 25px;
+    min-width: 250px;
+    padding: 10px 12px;
+    /* border: 1px solid; */
+    border-radius: 15px;
+    cursor: pointer;
+    background-color: rgba(225,225, 225, 0.1);
+    box-shadow: 20px 20px 30px rgba(0,0,0,0.9);
+    margin: 15px 0;
+    transition: 0.2s ease;
+    position: relative;    
+    justify-content: center;
+}
+
+.gallery .card img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.gallery .card:hover{
+    box-shadow: 20px 20px 30px rgba(0,0,0,0.06);
+}
+
+.gallery .card .desc{
+    text-align: center;
+    margin: -20px -10px;
+    font-size: small;
+}
+.gallery .card .desc h5{
+    font-size: medium;
+    margin-bottom: -05px;
+}
