@@ -1,13 +1,42 @@
 body{
-     background-image: url("/Tasks/bavkground\ blend.jpg");
+     background-image: url("/bavkground\ blend.jpg");
      /* background-size: cover; */
      height: 100vh;
      /* display: flex; */
-     justify-content: center;
-     align-items: center;
      font-family: Arial, Helvetica, sans-serif;
+     margin: 0;
+     padding: 0;
 
 }
+.navbar{
+    width: 100%;
+    padding: 22px 0px;
+    border-bottom: none;
+    background-color: rgba(225,225, 225, 0.1);
+}
+.nav-item{
+    width: 600px;
+    height: 20px;
+    margin-left: 700px;
+    margin-top: -40px;
+    margin-bottom: 20px;
+}
+.navbar ul li {
+    list-style-type: none;
+    float: right;
+   padding: 18px;
+}
+a{
+    color:white;
+    text-decoration: none;
+    font-family: calibri;
+    font-size: 22px;
+
+}
+a:hover{
+    color: crimson;
+}
+
 .gallery{
     text-align: center;
     color: white;
@@ -22,11 +51,13 @@ body{
     flex-wrap: wrap;
     justify-content: space-between;
     padding-top: 20px;
+    padding: 0 30px;
+
 }
 .gallery .card{
     width: 25px;
     min-width: 250px;
-    padding: 10px 12px;
+    padding: 10px 6px;
     /* border: 1px solid; */
     border-radius: 15px;
     cursor: pointer;
@@ -36,15 +67,20 @@ body{
     transition: 0.2s ease;
     position: relative;    
     justify-content: center;
+    transition: 1s all ease;
+
 }
 
 .gallery .card img{
     width: 100%;
     border-radius: 10px;
+    object-fit: cover;
 }
 
 .gallery .card:hover{
     box-shadow: 20px 20px 30px rgba(0,0,0,0.06);
+    transform: scale(1.05);
+    transition: 1s all ease;
 }
 
 .gallery .card .desc{
